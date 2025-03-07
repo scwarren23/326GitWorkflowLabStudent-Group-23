@@ -13,6 +13,10 @@ describe('Calculator Calculation Functions', function() {
     it('should return 2', function() {
         assert.strictEqual(res, 2);
     });
+    it('should return 9 when squaring -3', function() {
+        const res = calculator.calculateSquare(-3);
+        assert.strictEqual(res, 9);
+    });
 });
 
 
