@@ -13,8 +13,8 @@ describe('Calculator Calculation Functions', function() {
     it('should return 2', function() {
         assert.strictEqual(res, 2);
     });
+    
 });
-
 
 describe ('Calculator Cosine Function', function() {
     const res = calculator.cosine(0);
@@ -23,3 +23,15 @@ describe ('Calculator Cosine Function', function() {
         assert.strictEqual(res, 1);
     });
 });
+
+  
+describe('log function', function() {
+    const ln = calculator.naturalLog(1);
+    const ln2 = calculator.naturalLog(5);
+    it('should return 0', function() {
+        assert.strictEqual(ln, Math.log(5));
+    }); 
+});
+
+// Add your tests here
+
