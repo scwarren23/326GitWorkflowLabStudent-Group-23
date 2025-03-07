@@ -2,7 +2,11 @@
 
 // TODO: Fix the square root function not displaying
 function calculateSquareRoot(value) {
-    
+    if(value<0){
+        throw new Error;
+    } else{
+        return Math.sqrt(value);
+    }
     // return the square root of the value
 }
 
